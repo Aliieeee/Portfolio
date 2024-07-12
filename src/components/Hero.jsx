@@ -1,11 +1,13 @@
 import React from "react";
-import hero from "../assets/images/h.png";
+import hero from "../assets/images/hero-image.jpg";
 
 const Hero = () => {
  const social_media = [
     { logo: "logo-instagram", link: "https://www.instagram.com/" },
     // { logo: "logo-facebook", link: "https://www.facebook.com/" },
     { logo: "logo-linkedin", link: "http://linkedin.com/in/ali-hassan-a9a7b5201" },
+    { logo: "logo-github", link: "https://github.com/Aliieeee" },
+
     // { logo: "logo-twitter", link: "https://twitter.com/" }
 ];
 
@@ -14,9 +16,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
-      {/* <div className="flex-1 flex items-center justify-center h-full">
-        <img src={hero} alt="" className="md:w-11/12 h-full object-cover" />
-      </div> */}
+     
       <div className="flex-1 flex items-center justify-center h-full">
   <div className="rounded-full overflow-hidden w-64 h-64 flex items-center justify-center">
     <img src={hero} alt="" className="w-full h-full object-cover" />
@@ -33,7 +33,7 @@ const Hero = () => {
             My Name is <span>Ali Hassan</span>
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
-            MERN Stack Developer
+            Full Stack Developer
           </h4>
           <a href="#contact">
           <button className="btn-primary mt-8">Contact Me</button>

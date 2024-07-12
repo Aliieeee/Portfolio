@@ -2,9 +2,9 @@ import React from "react";
 // import aboutImg from "../assets/images/about.png";
 const About = () => {
   const info = [
-    { text: "Years experience", count: "03" },
-    { text: "Completed Projects", count: "15" },
-    { text: "Companies Work", count: "01" },
+    { text: "Years experience", count: "04" },
+    { text: "Completed Projects", count: "50" },
+    { text: "Companies Work", count: "03" },
   ];
   return (
     <section id="about" className="py-10 text-white">
@@ -17,7 +17,12 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-               As an experienced computer science professional proficient in database administration and MERN Stack development, I bring a wealth of expertise to the table. With a strong foundation built on multiple computer science certifications, I am dedicated to continuous learning and staying updated with the latest technologies.
+              As a Full Stack Developer and Machine Learning Engineer with extensive experience in both front-end and back-end technologies, I offer a comprehensive skill set that encompasses the full spectrum of web development. I am proficient in JavaScript, React, Node.js, and modern frameworks and libraries integral to the MERN stack. My expertise extends to responsive design and cross-platform compatibility, ensuring seamless user experiences on any device.
+              I hold a strong track record of successful projects, ranging from dynamic web applications to scalable e-commerce platforms. My approach combines meticulous attention to detail with a keen eye for aesthetics, making me a dual threat in crafting both functional and visually compelling applications.
+
+Certified in both front-end and back-end technologies, I am committed to lifelong learning and staying at the forefront of industry trends. I thrive in collaborative environments, and am passionate about using my skills to solve complex problems and drive business success.
+
+Whether you are a startup looking to build your product from scratch or an established business seeking to enhance your digital presence, I am here to help turn your vision into reality.
  </p>
      <br/>        
      <p className="text-justify leading-7 w-11/12 mx-auto">
