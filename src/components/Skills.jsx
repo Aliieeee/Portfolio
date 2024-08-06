@@ -3,25 +3,31 @@ import React from "react";
 const Skills = () => {
   const skills = [
     {
-      logo: "logo-android",
+      logo: "logo-python",
       level: "Advance",
-      count: 85,
+      count: 100,
+    },
+    {
+      logo: "logo-nodejs",
+      level: "Advance",
+      count: 100,
     },
     {
       logo: "logo-react",
       level: "Advance",
-      count: 80,
+      count: 100,
     },
     {
-      logo: "logo-Machine Learning",
-      level: "Intermediate",
-      count: 75,
+      logo: "logo-wordpress",
+      level: "Advance",
+      count: 100,
     },
     {
-      logo: "logo-cloud",
-      level: "Intermediate",
-      count: 70,
-    }
+      logo: "logo-laravel",
+      level: "Advance",
+      count: 100,
+    },
+
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
