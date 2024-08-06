@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
             {social_media?.map((socialMediaItem, index) => (
     <div key={index} className="text-gray-600 hover:text-white cursor-pointer">
-        <a href={socialMediaItem.link}>
+        <a href={socialMediaItem.link} target="_blank" rel="noopener noreferrer">
             <ion-icon name={socialMediaItem.logo}></ion-icon>
         </a>
     </div>

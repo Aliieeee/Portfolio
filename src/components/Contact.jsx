@@ -9,6 +9,36 @@ const Contact = () => {
       text: "Lahore, Pakistan",
     },
   ];
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = {
+      name: event.target[0].value,
+      email: event.target[1].value,
+      message: event.target[2].value,
+    };
+  
+    try {
+      const response = await fetch('http://localhost:3001/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        console.log('Email sent successfully');
+        alert('Email sent successfully');
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error sending email');
+    }
+  };
+  
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">
@@ -21,7 +51,7 @@ const Contact = () => {
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <form className="flex flex-col flex-1 gap-5">
+          <form className="flex flex-col flex-1 gap-5" onSubmit={handleSubmit}>
             <input type="text" placeholder="Your Name" />
             <input type="Email" placeholder="Your Email Address" />
             <textarea placeholder="Your Message" rows={10}></textarea>
